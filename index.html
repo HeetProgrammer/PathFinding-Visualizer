@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+
+<body class="bg-gray-900 min-h-screen flex flex-col items-center justify-center">
+    <h1 class="text-white text-xl mb-4">Pathfinding Visualizer</h1>
+    <div class="flex gap-4 mb-4 items-center">
+        <select id="algorithmSelect" class="px-3 py-2 rounded bg-gray-800 text-white border border-gray-600">
+            <option value="bfs">BFS</option>
+            <option value="dijkstra">Dijkstra</option>
+            <option value="astar">A*</option>
+        </select>
+
+        <button id="visualizeBtn" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+            Visualize
+        </button>
+
+        <button id="clearPathBtn" class="px-4 py-2 bg-yellow-500 text-black rounded hover:bg-yellow-600">
+            Clear Path
+        </button>
+
+        <button id="clearGridBtn" class="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700">
+            Clear Grid
+        </button>
+    </div>
+
+    <div id="grid" class="grid">
+
+    </div>
+    <script src="script.js">
+
+    </script>
+</body>
+
+
+
+</html>
